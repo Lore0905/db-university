@@ -16,6 +16,7 @@ WHERE `departments` . `name` = 'Dipartimento di Neuroscienze';
 SELECT * 
 FROM `course_teacher` 
 JOIN `courses` 
+ON `course_teacher` . `course_id` = `courses` . `id` 
 WHERE `teacher_id` = 44;
 
 4. Selezionare tutti gli studenti con i dati relativi al 
